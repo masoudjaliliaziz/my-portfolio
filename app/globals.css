@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(100%); /* شروع از خارج صفحه سمت راست */
+  }
+  100% {
+    transform: translateX(-100%); /* حرکت به سمت چپ خارج صفحه */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-scroll-wrapper {
+  display: flex;
+
+  overflow: hidden; /* مخفی کردن آیکون‌های خارج از صفحه */
+  position: relative;
+}
+
+.animate-scroll {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  animation: scrollAnimation 10s linear infinite; /* حرکت پیوسته و بی‌پایان */
+  white-space: nowrap;
+}
+
+.clip-path-custom {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+:root {
+  background-color: black;
+}
+
+.triangle-right {
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
 }
