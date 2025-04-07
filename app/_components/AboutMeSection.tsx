@@ -1,10 +1,10 @@
-import { Code2, Smartphone, Server } from "lucide-react";
+import { Code2, Smartphone, Server, Palette, Zap } from "lucide-react";
 
 export default function AboutMeSection() {
   return (
     <section
       id="about"
-      className="w-full bg-[#0D1B2A] text-white py-16 px-4 md:px-20"
+      className="w-full bg-black text-white py-16 px-4 md:px-20"
     >
       <div className="grid md:grid-cols-2 gap-12">
         {/* Left - Services */}
@@ -20,6 +20,16 @@ export default function AboutMeSection() {
           <div className="flex items-center gap-4">
             <Server size={40} />
             <span className="text-xl font-semibold">Website Hosting</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Palette size={40} />
+            <span className="text-xl font-semibold">UI/UX Design</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Zap size={40} />
+            <span className="text-xl font-semibold">
+              Performance Optimization
+            </span>
           </div>
         </div>
 
@@ -51,7 +61,7 @@ export default function AboutMeSection() {
 
           <div className="grid grid-cols-3 gap-6 text-center">
             <div>
-              <p className="text-3xl font-bold text-red-500">120 +</p>
+              <p className="text-3xl font-bold text-red-500">20 +</p>
               <p className="text-sm text-gray-400 mt-1">Completed Projects</p>
             </div>
             <div>

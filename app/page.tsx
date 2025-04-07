@@ -2,6 +2,7 @@ import Info from "./_components/Info";
 import Skill from "./_components/Skill";
 import Navbar from "./_components/Navbar";
 import AboutMeSection from "./_components/AboutMeSection";
+import Projects from "./_components/Projects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Info />
       <Skill />
       <AboutMeSection />
+      <Projects />
     </div>
   );
 }

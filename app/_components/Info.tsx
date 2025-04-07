@@ -34,7 +34,7 @@ function Info() {
           Frontend Developer
         </h1>
       </div>
-      <div className="w-full aspect-square sm:w-1/4  relative ">
+      <div className="w-full  sm:w-1/4  relative ">
         <div className="absolute w-[350px] aspect-square border-20 border-[#d76352] rounded-full top-20 right-[-15px] shadow-[#d76352] shadow-2xl"></div>
         <Image
           placeholder="blur"
