@@ -3,9 +3,20 @@
 import Image from "next/image";
 import React from "react";
 import me from "@/public/meme.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 function Info() {
   return (
-    <div className="w-full  shadow-md flex flex-col sm:flex-row pr-20 pt-20 ">
+    <div className="w-full  shadow-md flex flex-col sm:flex-row pr-20 pt-20 relative ">
+      <ChevronRight
+        className="text-[#d76352] absolute  bottom-0 right-[-40px]"
+        width={150}
+        height={150}
+      />
+      <ChevronLeft
+        className="text-[#d76352] absolute  top-20 right-90"
+        width={150}
+        height={150}
+      />
       <div className="w-full  sm:w-3/4 h-[450px] flex flex-col gap-6   ">
         <div className="flex items-baseline gap-1 px-20">
           {" "}
