@@ -9,12 +9,7 @@ import auth from "@/public/logo/auth.png";
 import tailwind from "@/public/logo/icons8-tailwind-css-48.png";
 import nextjs from "@/public/logo/icons8-nextjs-48.png";
 import supabase from "@/public/logo/icons8-supabase-48.png";
-import docker from "@/public/logo/icons8-docker-48.png";
-import api from "@/public/logo/icons8-rest-api-48.png";
-import postman from "@/public/logo/icons8-postman-inc-48.png";
-import Link from "next/link";
-import typescript from "@/public/logo/icons8-typescript-48.png";
-import javascript from "@/public/logo/icons8-javascript-48.png";
+import css from "@/public/logo/css.png";
 import zod from "@/public/logo/zod-seeklogo.png";
 import reactQuery from "@/public/logo/react-query-seeklogo.png";
 import reactRouter from "@/public/logo/react-router-seeklogo.png";
@@ -61,9 +56,9 @@ const cardData = [
     title: "World-wise",
     domain: "https://world-wise-seven-xi.vercel.app",
     framework: { label: "React.js", logo: react },
-    uiStateManagement: { label: "Redux", logo: redux },
+    uiStateManagement: { label: "react Context Api", logo: react },
 
-    styling: { label: "tailwindcss", logo: tailwind },
+    styling: { label: "css modules", logo: css },
     router: { label: "React Router", logo: reactRouter },
 
     demo: worldwise,
@@ -72,10 +67,9 @@ const cardData = [
     title: "Watch movie",
     domain: "https://use-popcorn-roan-sigma.vercel.app",
     framework: { label: "React.js", logo: react },
-    uiStateManagement: { label: "Redux", logo: redux },
+    uiStateManagement: { label: "css", logo: css },
 
     styling: { label: "tailwindcss", logo: tailwind },
-    router: { label: "React Router", logo: reactRouter },
 
     demo: popcorn,
   },
@@ -94,10 +88,9 @@ const cardData = [
     title: "react quiz",
     domain: "https://react-quiz-livid-gamma.vercel.app",
     framework: { label: "React.js", logo: react },
-    uiStateManagement: { label: "Redux", logo: redux },
+    uiStateManagement: { label: "react useReducer", logo: react },
 
-    styling: { label: "tailwindcss", logo: tailwind },
-    router: { label: "React Router", logo: reactRouter },
+    styling: { label: "css", logo: css },
 
     demo: quiz,
   },
@@ -162,14 +155,19 @@ function Projects() {
                       key={idx}
                       className="flex flex-col items-center justify-center text-white text-sm"
                     >
-                      <Image
-                        src={tech.logo}
-                        alt={tech.label}
-                        width={28}
-                        height={28}
-                        placeholder="blur"
-                      />
-                      <span className="mt-1 text-xs">{tech.label}</span>
+                      {tech && (
+                        <>
+                          {" "}
+                          <Image
+                            src={tech.logo}
+                            alt={tech.label}
+                            width={28}
+                            height={28}
+                            placeholder="blur"
+                          />
+                          <span className="mt-1 text-xs">{tech.label}</span>
+                        </>
+                      )}
                     </div>
                   ))}
               </div>
