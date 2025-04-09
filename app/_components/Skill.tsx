@@ -12,7 +12,6 @@ import tailwind from "@/public/logo/icons8-tailwind-css-48.png";
 import nextjs from "@/public/logo/icons8-nextjs-48.png";
 import git from "@/public/logo/icons8-git-48.png";
 import github from "@/public/logo/icons8-git-64.png";
-import axios from "@/public/logo/axios.png";
 import supabase from "@/public/logo/icons8-supabase-48.png";
 import docker from "@/public/logo/icons8-docker-48.png";
 import api from "@/public/logo/icons8-rest-api-48.png";

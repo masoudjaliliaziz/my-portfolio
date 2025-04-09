@@ -7,26 +7,26 @@ const contacts = [
   {
     icon: <Phone size={22} />,
     label: "Phone",
-    value: "+98 912 000 0000",
-    href: "tel:+989120000000",
+    value: "+98 933 977 3919",
+    href: "tel:+989339773919",
   },
   {
     icon: <Mail size={22} />,
     label: "Email",
-    value: "masoud.dev@example.com",
-    href: "mailto:masoud.dev@example.com",
+    value: "masoudjalili0781@gmail.com",
+    href: "mailto:masoudjalili0781@gmail.com",
   },
   {
     icon: <Github size={22} />,
     label: "GitHub",
-    value: "github.com/masoudjalili",
-    href: "https://github.com/masoudjalili",
+    value: "github.com/masoudjaliliaziz",
+    href: "https://github.com/masoudjaliliaziz",
   },
   {
     icon: <Linkedin size={22} />,
     label: "LinkedIn",
-    value: "linkedin.com/in/masoudjalili",
-    href: "https://linkedin.com/in/masoudjalili",
+    value: "linkedin.com/in/masoudjaliliaziz",
+    href: "https://www.linkedin.com/in/masoudjaliliaziz",
   },
 ];
 

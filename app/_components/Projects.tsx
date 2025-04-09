@@ -3,13 +3,9 @@ import React from "react";
 import oasisc from "@/public/projects/oasisc.png";
 import oasisa from "@/public/projects/oasisa.png";
 import coffee from "@/public/projects/coffee.png";
-
 import redux from "@/public/logo/icons8-redux-48.png";
-import typescript from "@/public/logo/icons8-typescript-48.png";
-import javascript from "@/public/logo/icons8-javascript-48.png";
 import react from "@/public/logo/icons8-react-48.png";
 import auth from "@/public/logo/auth.png";
-
 import tailwind from "@/public/logo/icons8-tailwind-css-48.png";
 import nextjs from "@/public/logo/icons8-nextjs-48.png";
 import supabase from "@/public/logo/icons8-supabase-48.png";
@@ -17,6 +13,8 @@ import docker from "@/public/logo/icons8-docker-48.png";
 import api from "@/public/logo/icons8-rest-api-48.png";
 import postman from "@/public/logo/icons8-postman-inc-48.png";
 import Link from "next/link";
+import typescript from "@/public/logo/icons8-typescript-48.png";
+import javascript from "@/public/logo/icons8-javascript-48.png";
 import zod from "@/public/logo/zod-seeklogo.png";
 import reactQuery from "@/public/logo/react-query-seeklogo.png";
 import reactRouter from "@/public/logo/react-router-seeklogo.png";

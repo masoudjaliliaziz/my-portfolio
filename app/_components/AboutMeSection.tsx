@@ -38,7 +38,7 @@ export default function AboutMeSection() {
               {" "}
               React, Next.js, Tailwind CSS
             </span>
-            , and more. I've been programming since{" "}
+            , and more. I&apos;ve been programming since{" "}
             <span className="font-bold text-red-500">2020</span>, starting with
             backend development using
             <span className="font-semibold text-red-300">
